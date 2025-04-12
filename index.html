@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegação Flexbox Froggy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .button {
+            background-color: #88cc88;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .button:hover {
+            background-color: #66aa66;
+        }
+
+        h1 {
+            text-align: center;
+            color: #338833;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox Froggy</h1>
+    <div class="container">
+        <script>
+            for(let i = 1; i <= 24; i++) {
+                document.write(`
+                    <a href="${i}.html" class="button">
+                        Nível ${i}
+                    </a>
+                `);
+            }
+        </script>
+    </div>
+</body>
+</html>
